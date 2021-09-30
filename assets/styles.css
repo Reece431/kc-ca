@@ -44,6 +44,9 @@ header {
   max-width: 1500px;
   position: absolute;
   top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin-top: .2em;
 }
 
@@ -187,6 +190,20 @@ footer .terms {
   }
   .main img {
     width: 15em;
+  }
+}
+
+@media screen and (min-height: 1025px) {
+  .main {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .main img {
+    width: 40em;
+  }
+  .btn .join {
+    font-size: 3em;
+    border-radius: 100px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
