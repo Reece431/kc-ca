@@ -44,7 +44,7 @@ header{
     @include center();
     max-width: $mw;
     img{
-        width: 35em;
+        width: 28em;
     }
 }
 .btn{
@@ -64,6 +64,7 @@ header{
 }
 footer{
     @include flex(center, center);
+    justify-self: flex-end;
     color: #eee;
     background: #2D2D2D;
     .terms{
