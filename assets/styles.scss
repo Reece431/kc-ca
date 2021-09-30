@@ -105,10 +105,15 @@ footer{
     }
 }
 @media screen and (max-width: 644px){
+    header{
+        img{
+            width: 8em;
+        }
+    }
     .main{
         flex-direction: column-reverse;
         img{
-            width: 19.8em;
+            width: 18em;
         }
     }
 }
