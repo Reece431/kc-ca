@@ -18,7 +18,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #696969;
+  background: url("./img/bg.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo, .slots, .offer, .join {
+  cursor: pointer;
 }
 
 header {
@@ -78,8 +85,8 @@ header img {
   margin: .5em;
   color: #fff;
   background: #fbb03b;
-  border: none;
-  border-radius: 4px;
+  border: solid 2px #7e4e01;
+  border-radius: 50px;
   font-size: 2em;
   text-transform: uppercase;
   display: -webkit-box;
