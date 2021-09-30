@@ -1,0 +1,106 @@
+//vars
+$mw: 1500px;
+// mixins
+@mixin flex($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+@mixin center(){
+    width: 100%;
+    margin: 0 auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #696969;
+}
+header{
+    @include flex(space-between, flex-start);
+    @include center();
+    max-width: $mw;
+    img{
+        width: 10em;
+        margin: 0 1em;
+    }
+}
+.main{
+    @include flex(space-around, center);
+    @include center();
+    max-width: $mw;
+    img{
+        width: 35em;
+    }
+}
+.btn{
+    @include flex(center, center);
+    @include center();
+    .join{
+        padding: .6em 1.5em;
+        margin: .5em;
+        color: #fff;
+        background: #fbb03b;
+        border: none;
+        border-radius: 4px;
+        font-size: 2em;
+        text-transform: uppercase;
+        @include flex(center, center);
+    }
+}
+footer{
+    @include flex(center, center);
+    color: #eee;
+    background: #2D2D2D;
+    .terms{
+        max-width: $mw;
+        width: 50em;
+        padding: 1em 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1153px) {
+    .main{
+       img{
+           width: 30em;
+       }
+    }
+}
+@media screen and (max-width: 982px){
+    .main{
+        img{
+            width: 20em;
+        }
+    }
+}
+@media screen and (max-width: 644px){
+    .main{
+        .slots{
+            display: none;
+        }
+        img{
+            width: 30em;
+        }
+    }
+}
+@media screen and (max-width: 415px){
+    header{
+        img{
+            margin: 0;
+        }
+    }
+    .main{
+        img{
+            width: 20em;
+        }
+    }
+}
